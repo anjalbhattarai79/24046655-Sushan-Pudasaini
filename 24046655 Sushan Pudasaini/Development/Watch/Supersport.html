@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sushan Pudasaini">
+    <meta name="description"
+        content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces.">
+    <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#333">
+    
+    <!-- Page Title -->
+    <title>Supersport</title>
+    <link rel="shortcut icon" href="../Images/Logo/logo(1).png" type="image/x-icon">
+    
+    <!-- Linking External Resources -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <style>
+        .product-page {
+            display: flex;
+            padding: 2px;
+            gap: 2px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .product-images .mainImage {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .thumbnail-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .thumbnail-images img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .thumbnail-images img:hover {
+            border-color: #333;
+        }
+
+        .product-details {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        .product-details h1 {
+            font-size: 30px;
+            margin-bottom: 3%;
+        }
+
+        .product-details .price {
+            font-size: 25px;
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-details .description {
+            margin: auto;
+            font-size: 17px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-options {
+            margin-bottom: 15px;
+        }
+
+        .product-options label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .product-options select,
+        .product-options input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 3px;
+        }
+
+        .add-to-cart {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+
+        .price {
+            font-size: 20px;
+        }
+
+        .original-price {
+            color: gray;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+
+        .discounted-price {
+            color: red;
+            font-weight: bold;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .rating-summary {
+            text-align: center;
+        }
+
+        .rating-summary .stars {
+            color: #f5c518;
+            font-size: 20px;
+        }
+
+        .rating-summary .score {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .rating-summary .reviews-count {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .rating-breakdown {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .rating-breakdown .rating-row {
+            margin-left: 20%;
+            margin-right: 20%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .rating-breakdown .stars {
+            color: #f5c518;
+            font-size: 16px;
+            width: 80px;
+        }
+
+        .rating-breakdown .bar {
+            flex: 1;
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .rating-breakdown .bar .fill {
+            background-color: #f5c518;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .rating-breakdown .count {
+            width: 30px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .write-review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .write-review button {
+            background-color: #f5c518;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .write-review button:hover {
+            background-color: #d4a917;
+        }
+
+        .review strong {
+            color: #f5c518;
+            font-size: 19px;
+        }
+
+        #rating {
+            color: #f5c518;
+        }
+
+        .submit button:hover {
+            background-color: #d4a917 !important;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-content">
+            <a href="../index.html"><img src="../Images/Logo/logo.png" alt="WebLogo" class="logo"></a>
+            <h1 style="text-align: center;">Regal Time</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/products.html" style="text-decoration: underline;">Product</a></li>
+                <li><a href="../HTML/blog.html">Blog</a></li>
+                <li><a href="../HTML/research.html">Research</a></li>
+                <li><a href="../HTML/aboutus.html">About Us</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <img src="../Images/Logo/cart-icon.png" alt="Cart Icon">
+                <a href="#"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <div class="product-images">
+            <img src="../Images/Watch/Supersport/basketball.png" alt="Product Image 1" id="MainImage" class="mainImage">
+            <div class="thumbnail-images">
+                <img src="../Images/Watch/Supersport/basketball.png" class="s-image" alt="product-image-1">
+                <img src="../Images/Watch/Supersport/black.png" class="s-image" alt="Product Image 2">
+                <img src="../Images/Watch/Supersport/golden.png" class="s-image" alt="Product Image 3">
+                <img src="../Images/Watch/Supersport/silver.png" class="s-image" alt="Product Image 4">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Supersport</h1>
+            <div class="price">
+                <span class="original-price">Rs 21,000</span>
+            </div>
+            <p class="description">
+                Redefining time, redefining you.
+
+            </p>
+            <div class="product-options">
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            <div class="product-info">
+                <h3>Product Details</h3>
+                <ul>
+                    <li>Diameter:45.5 mm</li>
+                    <li>Case Material: Stainless Steel</li>
+                    <li>Movement: Swiss Quartz</li>
+                    <li>Scratch-resistant sapphire crystal</li>
+                    <li>Interchangeable quick release bracelet</li>
+                </ul>
+            </div>
+            <br>
+    </main>
+
+    <br><br><br><br><br><br>
+    <div class="previous-reviews" style="margin-top: 20px;">
+        <h3 style="text-align: center;">Customer Reviews</h3>
+        <div class="review"
+            style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; display: flex; gap: 15px; align-items: center;">
+            <img src="../Images/ProfileP/ProfileB.png" alt="John Doe"
+                style="width: 50px; height: 50px; border-radius: 50%;">
+            <div>
+                <div><strong style="color: #f5c518;">★★★★★</strong></div>
+                <p><strong>Nirajan:</strong> Excellent product! Exceeded my expectations. Highly recommend!</p>
+                <p style="color: #777; font-size: 15px;">Posted on Jan 15, 2025</p>
+            </div>
+        </div>
+
+        <div class="review"
+            style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; display: flex; gap: 15px; align-items: center;">
+            <img src="../Images/ProfileP/ProfileG.png" alt="Jane Smith"
+                style="width: 50px; height: 50px; border-radius: 50%;">
+            <div>
+                <div><strong style="color: #f5c518;">★★★★☆</strong></div>
+                <p><strong>Purnima:</strong> Great quality but could be improved slightly. Still worth the purchase!
+                </p>
+                <p style="color: #777; font-size: 15px;">Posted on Jan 20, 2025</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="reviews-container">
+        <div class="rating-summary">
+            <div class="stars">★★★★★</div>
+            <div class="score">4.5 out of 5</div>
+            <div class="reviews-count">Based on 2 review</div>
+        </div>
+
+        <div class="rating-breakdown">
+            <div class="rating-row">
+                <div class="stars">★★★★★</div>
+                <div class="bar">
+                    <div class="fill" style="width: 100%;"></div>
+                </div>
+                <div class="count">1</div>
+            </div>
+            <div class="rating-row">
+                <div class="stars">★★★★☆</div>
+                <div class="bar">
+                    <div class="fill" style="width: 100%;"></div>
+                </div>
+                <div class="count">1</div>
+            </div>
+            <div class="rating-row">
+                <div class="stars">★★★☆☆</div>
+                <div class="bar"></div>
+                <div class="count">0</div>
+            </div>
+            <div class="rating-row">
+                <div class="stars">★★☆☆☆</div>
+                <div class="bar"></div>
+                <div class="count">0</div>
+            </div>
+            <div class="rating-row">
+                <div class="stars">★☆☆☆☆</div>
+                <div class="bar"></div>
+                <div class="count">0</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="write-review">
+        <button id="write-review-btn" style="margin: 30px;">Write a review</button>
+    </div>
+
+    <div id="review-form" style="text-align: center; display: none; margin-top: 20px;">
+        <label for="rating">Rate this product:</label>
+        <select id="rating" style="margin: 10px 0; padding: 5px; border-radius: 5px;">
+            <option value="★★★★★">★★★★★ - Excellent</option>
+            <option value="★★★★☆">★★★★☆ - Good</option>
+            <option value="★★★☆☆">★★★☆☆ - Average</option>
+            <option value="★★☆☆☆">★★☆☆☆ - Poor</option>
+            <option value="★☆☆☆☆">★☆☆☆☆ - Terrible</option>
+        </select>
+        <br>
+        <textarea id="review-text" rows="4" cols="50" placeholder="Write your review here..."
+            style="margin-top: 10px;"></textarea>
+        <br>
+        <div class="submit">
+            <button id="submit-btn" type="button"
+                style="margin: 20px; padding: 10px 20px; background-color: #f5c518; color: white; border: none; border-radius: 5px;">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../Images/Logo/logo.png" alt="Footer Logo"></a>
+            </div>
+            <div class="social-media">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="../Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px;" />
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../Images/Logo/instagram-icon.png" alt="Instagram"
+                            style="width: 55px; height: 35px;" />
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="../Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px;" />
+                    </a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li>Contact: +977-1234567890</li>
+                    <li>Email: info@regaltime.com</li>
+                </ul>
+            </div>
+            <div class="payment-methods">
+                <h4>Supported Payments</h4>
+                <ul>
+                    <li><img src="../Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px;"></li>
+                    <li><img src="../Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px;"></li><br>
+                    <li><img src="../Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px;"></li>
+                    <li><img src="../Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px;"></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>Legal</h3>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping & Return</a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Regal Time</div>
+    </footer>
+    <script>
+        var MainImage = document.getElementById("MainImage");
+        var smallImg = document.getElementsByClassName("s-image");
+
+        smallImg[0].onclick = function () {
+            MainImage.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImage.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImage.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImage.src = smallImg[3].src;
+        }
+    </script>
+
+    <!--Linking external javascript file-->
+    <script src="../Java Script/scripts.js"></script>
+</body>
+
+</html>

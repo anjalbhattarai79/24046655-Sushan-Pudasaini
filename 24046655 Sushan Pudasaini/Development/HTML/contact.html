@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for SEO and page information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Sushan Pudasaini" />
+  <meta name="description"
+    content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces." />
+  <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#333" />
+
+  <!-- Page Title and Favicon -->
+  <link rel="shortcut icon" href="../Images/Logo/logo(1).png" type="image/x-icon" />
+  <title>Contact US</title>
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+
+  <!-- Internal CSS for page-specific styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E5E5E5;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Flexbox layout for contact information boxes */
+    .contact-info {
+      display: flex;
+      /* Flexbox for layout */
+      justify-content: space-between;
+      /* Spaces boxes evenly */
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    /* Styling for individual contact boxes */
+    .contact-info .box {
+      flex: 1;
+      /* Flex-grow to distribute space equally */
+      padding: 20px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Hover effect for contact boxes */
+    .contact-info .box:hover {
+      box-shadow: 0 0 15px rgb(153, 148, 148);
+      /* Adds shadow on hover */
+    }
+
+    /* Styling for headings inside contact boxes */
+    .contact-info h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for paragraphs inside contact boxes */
+    .contact-info p {
+      margin: 15px 0;
+      color: #555;
+      font-size: 16px;
+    }
+
+    /* Styling for icons inside contact boxes */
+    .contact-info .icon {
+      font-size: 24px;
+      margin-right: 10px;
+      vertical-align: middle;
+      color: #4caf50;
+    }
+
+    /* Styling for details inside contact boxes */
+    .contact-info .details {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    /* Styling for the contact form container */
+    .container {
+      width: 50%;
+      height: 900px;
+      margin: 100px auto;
+      background-color: rgb(69, 63, 63);
+      color: whitesmoke;
+      padding: 20px;
+      box-shadow: 8px 8px 35px rgb(55, 54, 54);
+      border-radius: 0 32px 0 32px;
+      transition: all 0.3s ease-in-out;
+      /* Smooth transition for hover effects */
+    }
+
+    /* Styling for form headings */
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Styling for form labels */
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    /* Styling for form inputs and textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 95%;
+      padding: 8px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Styling for textarea */
+    textarea {
+      resize: vertical;
+      height: 200px;
+    }
+
+    /* Styling for submit button */
+    input[type="submit"] {
+      background-color: #5b5026;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /* Hover effect for submit button */
+    input[type="submit"]:hover {
+      background-color: rgb(91, 80, 38, 0.8);
+      /* Slight transparency on hover */
+    }
+
+    /* Styling for error messages */
+    #error-message {
+      color: red;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for success messages */
+    #output-message {
+      color: green;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="header-content">
+      <a href="./index.html"><img src="../Images/Logo/logo.png" alt="WebLogo" class="logo" /></a>
+      <h1 style="text-align: center; color: white">Regal Time</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <!-- Navigation Links -->
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li>
+          <a href="research.html" style="text-decoration: underline">Contact</a>
+        </li>
+      </ul>
+      <div class="cart-icon">
+        <!-- Placeholder for Cart Icon -->
+        <img src="../Images/Logo/cart-icon.png" alt="Cart Icon" />
+        <a href="#"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Information Section -->
+  <div class="contact-info">
+    <!-- Left Box: Address -->
+    <div class="box" style="background-color: ghostwhite;">
+      <h2>📍 Address</h2>
+      <p>
+        Kalanki, Kathmandu<br />
+        Ring Road, Ward No. 14<br />
+        Kathmandu, Nepal
+      </p>
+    </div>
+
+    <!-- Middle Box: Phone & Email -->
+    <div class="box" style="background-color: cornsilk;">
+      <h2>📞 Contact</h2>
+      <p>
+        <strong>Phone:</strong><br />
+        +977-1234567890
+      </p>
+      <p>
+        <strong>Email:</strong><br />
+        info@regaltime.com
+      </p>
+    </div>
+
+    <!-- Right Box: Opening Hours -->
+    <div class="box" style="background-color: rgb(154, 205, 50, 0.75);">
+      <h2>🕒 Opening Hours</h2>
+      <p>
+        <strong>Monday - Friday:</strong><br />
+        9:00 AM - 6:00 PM
+      </p>
+      <p>
+        <strong>Saturday - Sunday:</strong><br />
+        Closed
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="container">
+    <h1 style="color: gold">Contact Us</h1>
+
+    <form action="#" method="post" id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /> <br><br>
+
+      <label for="subject">Phone:</label>
+      <input type="text" id="phone" name="phone" /><br><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br><br>
+
+      <input type="checkbox" name="accept" id="check">
+      Subscribe to our newsletter and get exclusive offers! <br><br>
+
+      <input type="submit" value="Submit" />
+      <div id="error-message"></div>
+    </form>
+    <div id="output-message"></div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <!-- Footer Logo -->
+        <a href="../index.html"><img src="../Images/Logo/logo.png" alt="Footer Logo" /></a>
+      </div>
+      <div class="social-media">
+        <!-- Social Media Icons -->
+        <h3>Stay Connected</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px" />
+          </a>
+          <a href="https://www.instagram.com/anjalbhattarai79/" target="_blank">
+            <img src="../Images/Logo/instagram-icon.png" alt="Instagram" style="width: 55px; height: 35px" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px" />
+          </a>
+        </div>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li>Contact: +977-1234567890</li>
+          <li>Email: info@regaltime.com</li>
+        </ul>
+      </div>
+      <div class="payment-methods">
+        <h4>Supported Payments</h4>
+        <!-- Payment Methods -->
+        <ul>
+          <li>
+            <img src="../Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px" />
+          </li>
+          <li>
+            <img src="../Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px" />
+          </li>
+          <br />
+          <li>
+            <img src="../Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px" />
+          </li>
+          <li>
+            <img src="../Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px" />
+          </li>
+        </ul>
+      </div>
+      <div class="legal">
+        <h3>Legal</h3>
+        <!-- Legal Links -->
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Shipping & Return</a>
+      </div>
+    </div>
+    <div class="copyright">2025 Regal Time</div>
+  </footer>
+
+  <!-- JavaScript for Form Validation -->
+  <script>
+    // Selecting form and message elements
+    const form = document.getElementById("contact-form");
+    const errorMessage = document.getElementById("error-message");
+    const outputMessage = document.getElementById("output-message");
+
+    // Adding event listener to handle form submission
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // Prevents default form submission behavior
+
+      // Retrieving user input values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+
+      let hasError = false; // Flag to track validation errors
+
+      // Clear previous error messages before new validation
+      document.querySelectorAll(".error").forEach((el) => el.remove());
+
+      // Validating name field
+      if (name === "") {
+        showError("name", "Please enter your name.");
+        hasError = true;
+      }
+
+      // Validating email field
+      if (email === "") {
+        showError("email", "Please enter your email.");
+        hasError = true;
+      } else if (!validateEmail(email)) { // Checking for valid email format
+        showError("email", "Please enter a valid email address.");
+        hasError = true;
+      }
+
+      // Validating phone field
+      if (phone === "") {
+        showError("phone", "Please enter your phone number.");
+        hasError = true;
+      } else if (!validatePhone(phone)) { // Ensuring 10-digit phone number format
+        showError("phone", "Please enter a valid 10-digit phone number.");
+        hasError = true;
+      }
+
+      // Validating message field
+      if (message === "") {
+        showError("message", "Please enter a message.");
+        hasError = true;
+      }
+
+      // If no errors, display success message
+      if (!hasError) {
+        outputMessage.innerHTML = "<h2>Thank you for your feedback!</h2>";
+        alert("Feedback Received!"); // Pop-up confirmation
+        errorMessage.innerHTML = ""; // Clear any existing error messages
+      }
+    });
+
+    // Function to display error messages below respective input fields
+    function showError(fieldId, message) {
+      const field = document.getElementById(fieldId);
+      const errorElement = document.createElement("div");
+      errorElement.className = "error";
+      errorElement.style.color = "red";
+      errorElement.style.fontSize = "14px";
+      errorElement.textContent = message;
+      field.insertAdjacentElement("afterend", errorElement);
+    }
+
+    // Function to validate email format using regex pattern
+    function validateEmail(email) {
+      const emailRegex = /.+@.+\..+/;
+      return emailRegex.test(email);
+    }
+
+    // Function to validate phone number format (10-digit numeric)
+    function validatePhone(phone) {
+      const phoneRegex = /^\d{10}$/;
+      return phoneRegex.test(phone);
+    }
+
+  </script>
+</body>
+
+</html>

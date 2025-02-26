@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Meta information-->
+  <meta name="author" content="Sushan Pudasaini" />
+  <meta name="description"
+    content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces." />
+  <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#333" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Page Title -->
+  <link rel="shortcut icon" href="../Images/Logo/logo(1).png" type="image/x-icon" />
+  <title>About Us</title>
+
+  <!-- Linking External CSS -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+
+  <style>
+    /* Section styling */
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+    }
+
+    /* Flex container for team members */
+    .team-members {
+      display: flex;
+      /* Enables flexbox layout */
+      flex-direction: column;
+      /* Stacks items vertically */
+      gap: 40px;
+      /* Adds spacing between team member sections */
+    }
+
+    /* Styling for individual team member blocks */
+    .team-member {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Flex layout for each team member block */
+    .team-content {
+      margin-left: 0%;
+      display: flex;
+      /* Aligns items in a row */
+      gap: 20px;
+      /* Adds spacing between elements */
+    }
+
+    /* Reversed layout for content */
+    .team-content.reverse {
+      margin-right: 0%;
+      flex-direction: row-reverse;
+      /* Reverses the order of elements */
+    }
+
+    /* Styling for team members photos */
+    .team-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Team Text Styles */
+    .team-text {
+      flex: 1;
+      /* Allows text section to take remaining space */
+      text-align: left;
+    }
+
+    .know-more:hover {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="header-content">
+      <a href="../index.html"><img src="../Images/Logo/logo.png" alt="WebLogo" class="logo" /></a>
+      <h1 style="text-align: center">Regal Time</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <!-- Navigation Links -->
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li>
+          <a href="aboutus.html" style="text-decoration: underline">About Us</a>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="cart-icon">
+        <!-- Placeholder for Cart Icon -->
+        <img src="../Images/Logo/cart-icon.png" alt="Cart Icon" />
+        <a href="#"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Team Section -->
+  <div class="team-section">
+    <h2 style="text-decoration: underline">Meet Our Team</h2>
+    <div class="team-members">
+      <!-- Person 1 -->
+      <div class="team-member">
+        <div class="team-content">
+          <img src="../Images/Profile/Sushan.jpg" alt="Sushan " class="team-photo" />
+          <div class="team-text">
+            <h3>Sushan Pudasaini</h3>
+            <p style="font-style: italic">Student</p>
+            <p>
+              "Time is the one resource equally available to everyone. How we
+              use it defines our achievements and satisfaction."
+            </p>
+            <a href="../CV/SushanCv.html" class="know-more">Know More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Person 2 -->
+      <div class="team-member">
+        <div class="team-content reverse">
+          <img src="../Images/Profile/Anjal.jpg" alt="Anjal" class="team-photo" />
+          <div class="team-text">
+            <h3>Anjal Bhattarai</h3>
+            <p style="font-style: italic">Student</p>
+            <p>
+              "The pressure of deadlines and the passage of time often inspire
+              creativity and drive progress in various fields."
+            </p>
+            <a href="../CV/AnjalCv.html" class="know-more">Know More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Person 3 -->
+      <div class="team-member">
+        <div class="team-content">
+          <img src="../Images/Profile/Bikash.jpg" alt="Bikash" class="team-photo" />
+          <div class="team-text">
+            <h3>Bikash Chaurasiya</h3>
+            <p style="font-style: italic">Student</p>
+            <p>
+              "Efficient time management is critical for personal and
+              professional success. It allows individuals to maximize
+              productivity and minimize stress."
+            </p>
+            <a href="../CV/BikashCv.html" class="know-more">Know More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Person 4 -->
+      <div class="team-member">
+        <div class="team-content reverse">
+          <img src="../Images/Profile/Surya.jpg" alt="Surya" class="team-photo" />
+          <div class="team-text">
+            <h3>Surya Naryan Yadav</h3>
+            <p style="font-style: italic">Student</p>
+            <p>
+              "Properly managing time helps maintain a balance between work,
+              leisure, and personal responsibilities, leading to a fulfilling
+              life."
+            </p>
+            <a href="../CV/SuryaCv.html" class="know-more">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer-content">
+      <div class="footer-logo">
+        <!-- Footer Logo -->
+        <a href="../index.html"><img src="../Images/Logo/logo.png" alt="Footer Logo" /></a>
+      </div>
+      <div class="social-media">
+        <!-- Social Media Icons -->
+        <h3>Stay Connected</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px" />
+          </a>
+          <a href="https://www.instagram.com/anjalbhattarai79/" target="_blank">
+            <img src="../Images/Logo/instagram-icon.png" alt="Instagram" style="width: 55px; height: 35px" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px" />
+          </a>
+        </div>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li>Contact: +977-1234567890</li>
+          <li>Email: info@regaltime.com</li>
+        </ul>
+      </div>
+      <div class="payment-methods">
+        <h4>Supported Payments</h4>
+        <!-- Payment Methods -->
+        <ul>
+          <li>
+            <img src="../Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px" />
+          </li>
+          <li>
+            <img src="../Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px" />
+          </li>
+          <br />
+          <li>
+            <img src="../Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px" />
+          </li>
+          <li>
+            <img src="../Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px" />
+          </li>
+        </ul>
+      </div>
+      <div class="legal">
+        <h3>Legal</h3>
+        <!-- Legal Links -->
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Shipping & Return</a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Regal Time</div>
+  </footer>
+</body>
+
+</html>

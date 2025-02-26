@@ -1,0 +1,260 @@
+/* Apply global styles to the entire body */
+body {
+  font-family: Arial, sans-serif;
+  /* Set a readable font */
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  /* Set default text color */
+}
+
+/* Header style for navigation and branding */
+header {
+  background-color: #333;
+  /* Dark background for contrast */
+  color: #fff;
+  /* White text for readability */
+  padding: 10px 20px;
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space out elements */
+  align-items: center;
+  /* Align elements vertically */
+}
+
+/* Grouping logo and navigation together */
+.header-content {
+  display: flex;
+  align-items: center;
+  /* Ensure elements are centered vertically */
+  gap: 10px;
+  /* Add spacing between logo and text */
+}
+
+/* Logo styling */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  /* Center navigation links */
+  align-items: center;
+}
+
+/* Style for the navigation links */
+header .nav-links {
+  list-style: none;
+  /* Remove default bullet points */
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  /* Arrange links in a row */
+  margin-right: 2px;
+}
+
+/* Style for individual navigation items */
+header .nav-links li {
+  margin-left: 30px;
+  /* Space out links */
+}
+
+/* Style for navigation links */
+header .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+/* Hover effect for navigation links */
+header .nav-links a:hover {
+  text-decoration: underline;
+  /* Underline when hovered */
+}
+
+/* Cart icon styling */
+.cart-icon {
+  display: flex;
+  /* Ensure icon and text are aligned */
+  align-items: center;
+}
+
+/* Cart icon image styling */
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+/* Hover effect for cart icon */
+.cart-icon:hover {
+  transform: scale(1.1);
+  /* Slightly enlarge icon on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  /* Center footer text */
+}
+
+/* Footer layout adjustments */
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  /* Arrange elements in a row */
+  align-items: center;
+  justify-content: space-between;
+  /* Space out footer sections */
+  padding: 20px;
+}
+
+/* Footer logo styling */
+.footer-logo {
+  margin: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Footer sections styling */
+footer .legal,
+footer .social-media {
+  flex: 1;
+  /* Distribute space evenly */
+}
+
+/* Footer headings styling */
+footer .legal h3,
+footer .social-media h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer links styling */
+footer .legal a,
+footer .social-media a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Hover effect for footer links */
+footer .legal a:hover,
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Social media icons styling */
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  /* Space out social icons */
+  justify-content: center;
+}
+
+/* Adjust icon size for social media */
+footer .social-icons a {
+  font-size: 20px;
+}
+
+/* Company section in the footer */
+.company {
+  flex: 1;
+  text-align: center;
+  /* Center align company details */
+}
+
+/* Styling for company section headings */
+.company h3 {
+  color: #fff;
+}
+
+/* Company details list */
+.company ul {
+  list-style: none;
+  /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual company details */
+.company ul li {
+  color: #ccc;
+}
+
+/* Company links styling */
+.company ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* Smooth color transition on hover */
+}
+
+/* Hover effect for company links */
+.company ul li a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Copyright section styling */
+footer .copyright {
+  margin-top: 1px;
+  color: #ccc;
+}
+
+/* Social media images styling */
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+  /* Smooth scale effect on hover */
+  flex: auto;
+}
+
+/* Social media icon hover effect */
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+/* Payment methods section */
+.payment-methods {
+  margin: 0 20px;
+}
+
+/* Payment methods title */
+.payment-methods h4 {
+  margin-bottom: 10px;
+}
+
+/* Remove list styles for payment methods */
+.payment-methods ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Payment method list item styling */
+.payment-methods ul li {
+  display: inline-block;
+  /* Arrange payment logos in a row */
+  margin-right: 10px;
+}
+
+/* Payment method images styling */
+.payment-methods ul li img {
+  gap: 20px;
+  width: 30px;
+  height: auto;
+}

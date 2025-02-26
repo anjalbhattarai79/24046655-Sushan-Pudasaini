@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Meta information-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sushan Pudasaini">
+  <meta name="description"
+    content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces.">
+  <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#333">
+  <!-- Page Title -->
+  <link rel="shortcut icon" href="../Images/Logo/logo(1).png" type="image/x-icon">
+  <title>Products</title>
+
+  <!-- Linking External Resources -->
+  <script src="../Java Script/scripts.js"></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <style>
+    /* Main content area */
+    .content {
+      flex: 1;
+      /* Allows content to grow and fill available space */
+      padding: 20px;
+      /* Adds padding */
+      background-color: #f9f9f9;
+      /* Sets background color */
+    }
+
+    /* Container for products */
+    .Products {
+      display: flex;
+      /* Enables flexbox layout */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      /* Adds space between product cards */
+      max-width: 1200px;
+      margin: 0 auto;
+      /* Centers the container */
+    }
+
+    /* Individual product card */
+    .product-card {
+      flex-basis: 250px;
+      /* Sets minimum width for cards */
+      background: white;
+      /* Sets background color */
+      padding: 15px;
+      border-radius: 8px;
+      /* Rounds the corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adds shadow */
+      text-align: center;
+      /* Centers text */
+    }
+
+    .product-card img {
+      max-width: 100%;
+      /* Ensures image fits within the card */
+      height: auto;
+      /* Maintains aspect ratio */
+      border-radius: 8px;
+      /* Rounds the corners */
+      margin-bottom: 15px;
+      /* Adds margin below image */
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      /* Adds hover effect */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      /* Enhances shadow on hover */
+    }
+
+    .product-card h2 {
+      margin-bottom: 10px;
+      /* Adds margin below heading */
+      font-size: 18px;
+      color: #333;
+    }
+
+    .product-card p {
+      margin-bottom: 15px;
+      /* Adds margin below paragraph */
+      color: #666;
+      /* Sets softer text color */
+    }
+
+    .price {
+      font-size: 20px;
+      /* Sets font size */
+      font-weight: bold;
+      /* Makes text bold */
+      margin-bottom: 15px;
+      /* Adds margin below price */
+    }
+
+    .add-to-cart {
+      display: inline-block;
+      /* Ensures inline-block display */
+      padding: 10px 20px;
+      background-color: #333;
+      /* Sets button background color */
+      color: white;
+      text-decoration: none;
+      /* Removes underline */
+      border-radius: 5px;
+      /* Rounds the corners */
+      font-size: 14px;
+    }
+
+    .add-to-cart:hover {
+      background-color: #555;
+      /* Changes background color on hover */
+    }
+
+    /* Rating section */
+    .rating {
+      display: flex;
+      /* Enables flexbox layout */
+      justify-content: center;
+      /* Centers stars horizontally */
+      align-items: center;
+      /* Centers stars vertically */
+      gap: 4px;
+      /* Adds space between stars */
+      margin: 8px 0;
+      /* Adds margin top-bottom and left-right*/
+    }
+
+    .rating span {
+      color: gold;
+      /* Sets active star color */
+      font-size: 20px;
+      /* Sets star size */
+    }
+
+    .rating .stars {
+      color: #ccc;
+      /* Sets inactive star color */
+    }
+
+    .original-price {
+      color: gray;
+      text-decoration: line-through;
+      /* Adds line-through effect */
+      margin-right: 10px;
+      /* Adds margin */
+    }
+
+    .discounted-price {
+      color: red;
+      /* Sets text color */
+      font-weight: bold;
+      /* Makes text bold */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <div class="header-content">
+      <a href="../index.html"><img src="../Images/Logo/logo.png" alt="WebLogo" class="logo"></a>
+      <h1 style="text-align: center;">Regal Time</h1>
+    </div>
+    <nav>
+      <ul class="nav-links"><!-- Navigation Links -->
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="products.html" style="text-decoration: underline;">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="cart-icon"><!-- Placeholder for Cart Icon -->
+        <img src="../Images/Logo/cart-icon.png" alt="Cart Icon">
+        <span id="cart-count"></span>
+        <a href="#"></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="Products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="../Watch/Brihaspati.html"><img src="../Images/Watch/Brihaspati/Profile-Brihaspati-beige.png"
+            alt="Brihaspati"></a>
+        <h2>Brihaspati</a></h2>
+        <p>Embrace Precision with the Brishaspati Chronograph.</p>
+        <div class="price">
+          <span class="original-price">Rs 16,000</span>
+          <span class="discounted-price">Rs 12,000</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(4/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="../Watch/Alankaar.html"><img src="../Images/Watch/Alankar/alankaar-beige.png.webp" alt="Alankaar"></a>
+        <h2>Alankaar</h2>
+        <p>Discover the allure of the Alankaar Automatic.</p>
+        <div class="price">
+          <span class="original-price">Rs 10,000</span>
+          <span class="discounted-price">Rs 7,999</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(3/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="../Watch/Casual.html"><img src="../Images/Watch/Casual/RGR-casual.png" alt="Casual"></a>
+        <h2>Casual</h2>
+        <p>Casual with luxury.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 5,555</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <!-- Display static rating value -->
+          <span>(5/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="../Watch/Everest Gun.html"><img src="../Images/Watch/Everest Gun Metal/GmBLK.png"
+            alt="Everest Gun"></a>
+        <h2>Everest Gun</a></h2>
+        <p>The Everest Gun Metal is versatile timepiece worn with formal attire.</p>
+        <div class="price">
+          <span class="original-price">Rs 26,000</span>
+          <span class="discounted-price">Rs 24,500</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(4/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="../Watch/G 200.html"><img src="../Images/Watch/G200/Dark.png" alt="G 200"></a>
+        <h2>G 200</h2>
+        <p>Built to last, designed to explore.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 8,799</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <!-- Display static rating value -->
+          <span>(5/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="../Watch/Nato.html"><img src="../Images/Watch/Nato/Brown.png" alt="Nato"></a>
+        <h2>Nato</h2>
+        <p>Timeless luxury on your wrist.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 6,500</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734</span>
+          <!-- Display static rating value -->
+          <span>(4/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <a href="../Watch/Panchhi.html"><img src="../Images/Watch/Panchhi/panchhi1.png" alt="Panchhi"></a>
+        <h2>Panchhi</a></h2>
+        <p>Simplicity perfected, every second.</p>
+        <br>
+        <div class="price">
+          <span class="original-price">Rs 15,000</span>
+          <span class="discounted-price">Rs 13,500</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(2/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <a href="../Watch/Urban Chrono.html"><img src="../Images/Watch/Urban Chrono/black.png" alt="Urban Chrono"></a>
+        <h2>Urban Chrono</h2>
+        <p>Classic design for modern times.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 11,000</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <!-- Display static rating value -->
+          <span>(5/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 9 -->
+      <div class="product-card">
+        <a href="../Watch/Ballade.html"><img src="../Images/Watch/Ballade/blue.png" alt="Ballade"></a>
+        <h2>Ballade</a></h2>
+        <p>Make a statement, every minute.</p>
+        <br>
+        <div class="price">
+          <span class="original-price">Rs 10,000</span>
+          <span class="discounted-price">Rs 8,500</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(4/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 10 -->
+      <div class="product-card">
+        <a href="../Watch/Sideral s.html"><img src="../Images/Watch/Sideral S/blue.png" alt="Sideral S"></a>
+        <h2>Sideral S</h2>
+        <p>The future of time, today.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 4,800</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(3/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 11 -->
+      <div class="product-card">
+        <a href="../Watch/Supersport.html"><img src="../Images/Watch/Supersport/basketball.png" alt="Supersport"></a>
+        <h2>Supersport</h2>
+        <p>Redefining time, redefining you.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 21,000</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(4/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+      <!-- Product 12 -->
+      <div class="product-card">
+        <a href="../Watch/T-Touch.html"><img src="../Images/Watch/T-Touch/black.png" alt="T-Touch"></a>
+        <h2>T-Touch</h2>
+        <p>Your companion for every journey.</p>
+        <br>
+        <div class="price">
+          <span style="text-decoration: none;" class="original-price">Rs 17,000</span>
+        </div>
+        <div class="rating">
+          <!-- Static rating -->
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <span class="stars">&#9734;</span>
+          <!-- Display static rating value -->
+          <span>(2/5)</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <footer><!-- Footer Section -->
+    <div class="footer-content">
+      <div class="footer-logo"> <!-- Footer Logo -->
+        <a href="../index.html"><img src="../Images/Logo/logo.png" alt="Footer Logo"></a>
+      </div>
+      <div class="social-media"><!-- Social Media Icons -->
+        <h3>Stay Connected</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px;" />
+          </a>
+          <a href="https://www.instagram.com/anjalbhattarai79/" target="_blank">
+            <img src="../Images/Logo/instagram-icon.png" alt="Instagram" style="width: 55px; height: 35px;" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="../Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px;" />
+          </a>
+        </div>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li>Contact: +977-1234567890</li>
+          <li>Email: info@regaltime.com</li>
+        </ul>
+      </div>
+      <div class="payment-methods">
+        <h4>Supported Payments</h4><!-- Payment Methods -->
+        <ul>
+          <li><img src="../Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px;"></li>
+          <li><img src="../Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px;"></li><br>
+          <li><img src="../Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px;"></li>
+          <li><img src="../Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px;"></li>
+        </ul>
+      </div>
+      <div class="legal">
+        <h3>Legal</h3><!-- Legal Links -->
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Shipping & Return</a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Regal Time</div>
+  </footer>
+
+  <script>
+    // scripts.js
+    let cartCount = 0;
+
+    // Add event listeners to Add to Cart buttons
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        cartCount++;
+        document.getElementById("cart-count").textContent = cartCount;
+        alert("Item added to cart!");
+      });
+    });
+  </script>
+</body>
+
+</html>

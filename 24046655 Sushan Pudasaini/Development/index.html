@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <head>
+        <!--Meta information-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sushan Pudasaini">
+        <meta name="description"
+            content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces.">
+        <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#333">
+
+        <!-- Page Title -->
+        <link rel="shortcut icon" href="./Images/Logo/logo(1).png" type="image/x-icon">
+        <title>Home</title>
+
+        <!-- Linking External CSS -->
+        <link rel="stylesheet" href="./CSS/style.css">
+
+        <style>
+            /* General Styles */
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #444;
+                line-height: 1.6;
+                /* Improves readability */
+            }
+
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                /* Centers container */
+            }
+
+            /* Banner Section */
+            .banner {
+                position: relative;
+                width: auto;
+                height: 750px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                flex-direction: column;
+                margin: 50px;
+                border-radius: 20px;
+                overflow: hidden;
+                /* Hides overflow content */
+            }
+
+            .banner video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* Ensures video covers the entire banner */
+            }
+
+            /* Text style in banner */
+            .banner-text {
+                position: absolute;
+                top: 30px;
+                left: 40px;
+                color: #fff;
+            }
+
+            .banner h1 {
+                font-size: 48px;
+                font-weight: bold;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                /* Adds shadow effect to text */
+            }
+
+            .banner p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .banner .btn {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                /* Pointer cursor on hover */
+            }
+
+            /* Featured Products Section */
+            .featured-products {
+                text-align: center;
+                padding: 48px 0;
+                background-color: #fff;
+                margin-top: -20px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                /* Light shadow effect */
+            }
+
+            .featured-products h2 {
+                margin-bottom: 32px;
+                font-size: 32px;
+                color: #333;
+            }
+
+            .product-layout {
+                display: flex;
+                justify-content: center;
+                gap: 32px;
+                /* Space between products */
+            }
+
+            .product-item {
+                width: 200px;
+                margin: 16px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 24px;
+                text-align: center;
+                /* Centers product content */
+            }
+
+            /* Hover effect for product items */
+            .product-item:hover {
+                transform: translateY(-5px);
+                /* Lift on hover */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                /* Shadow on hover */
+            }
+
+            .product-item img {
+                width: 220px;
+                height: auto;
+                margin-bottom: 16px;
+                border-radius: 5px;
+                /* Rounded corners for images */
+            }
+
+            /* Brand Showcase Section */
+            .brand-showcase {
+                background-color: #f4f4f4;
+                padding: 100px;
+                text-align: center;
+                /* Centers brand logos */
+            }
+
+            .brand-showcase h2 {
+                margin-bottom: 32px;
+                font-size: 32px;
+                color: #333;
+            }
+
+            .brand-showcase .brand-logos {
+                display: flex;
+                justify-content: center;
+            }
+
+            .brand-showcase .brand-item {
+                margin: 15px;
+            }
+
+            .brand-showcase .brand-item img {
+                margin: 45px;
+                height: 60px;
+            }
+
+            .brand-showcase .brand-item img:hover {
+                transform: scale(1.1);
+                /* Scale effect on hover */
+            }
+
+            /* Price and Add to Cart Button */
+            .original-price {
+                color: gray;
+                text-decoration: line-through;
+                /* Strikes through original price */
+                margin-right: 10px;
+            }
+
+            .discounted-price {
+                color: red;
+                font-weight: bold;
+                /* Highlights discounted price */
+            }
+
+            .add-to-cart {
+                background-color: #333;
+                color: #fff;
+                padding: 13px 10px;
+                font-size: 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                /* Pointer cursor on hover */
+            }
+
+            .add-to-cart:hover {
+                background-color: #555;
+                /* Darker background on hover */
+            }
+
+            /* Overview Section */
+            .overview-section {
+                padding: 48px 0;
+                background-color: #fff;
+                margin-top: -20px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                /* Light shadow effect */
+            }
+
+            .overview-layout {
+                display: flex;
+                justify-content: center;
+                gap: 32px;
+                /* Space between overview items */
+            }
+
+            .overview-item {
+                width: 200px;
+                margin: 16px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 24px;
+                text-align: center;
+                /* Centers content */
+            }
+
+            /* Hover effect for overview items */
+            .overview-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                /* Adds shadow on hover */
+            }
+
+            .overview-item img {
+                border-radius: 10px;
+                margin-bottom: 16px;
+            }
+
+            .overview-item h3 {
+                margin-bottom: 16px;
+                font-size: 24px;
+                color: #333;
+            }
+
+            .overview-item p {
+                margin-bottom: 16px;
+                font-size: 16px;
+                color: #666;
+            }
+
+            .overview-item a {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                /* Pointer cursor on hover */
+            }
+
+            .overview-item a:hover {
+                background-color: #555;
+                /* Darker background on hover */
+            }
+        </style>
+
+    </head>
+
+<body>
+    <!-- Header containing Navigation bar -->
+    <header>
+        <div class="header-content">
+            <a href="./index.html"><img src="./Images/Logo/logo.png" alt="WebLogo" class="logo"></a>
+            <h1 style="text-align: center;">Regal Time</h1>
+        </div>
+        <nav>
+            <ul class="nav-links"><!-- Navigation Links -->
+                <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+                <li><a href="./HTML/products.html">Product</a></li>
+                <li><a href="./HTML/blog.html">Blog</a></li>
+                <li><a href="./HTML/research.html">Research</a></li>
+                <li><a href="./HTML/aboutus.html">About Us</a></li>
+                <li><a href="./HTML/contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon"><!-- Placeholder for Cart Icon -->
+                <img src="./Images/Logo/cart-icon.png" alt="Cart Icon">
+                <span id="cart-count"></span>
+                <a href="#"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <video src="./Video/background-video.mp4" autoplay muted loop></video>
+            <div class="banner-text">
+                <h1>Discover Luxury Watches</h1>
+                <p>Explore our exclusive collection of premium timepieces.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-layout">
+                <!-- Individual Product Cards -->
+                <div class="product-item">
+                    <a href="./Watch/Brihaspati.html"><img src="./Images/Watch/Brihaspati/Profile-Brihaspati-beige.png"
+                            alt="Brishaspati"></a>
+                    <h3>Brihaspati</h3><!-- Featured Product1 -->
+                    <div class="price">
+                        <span class="original-price">Rs 16,000</span>
+                        <span class="discounted-price">Rs 12,000</span>
+                    </div><br>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="./Watch/Everest Gun.html"><img src="./Images/Watch/Everest Gun Metal/GmBLK.png"
+                            alt="Everest Gun"></a>
+                    <h3>Everest Gun</h3><!-- Featured Product2 -->
+                    <div class="price">
+                        <span class="original-price">Rs 26,000</span>
+                        <span class="discounted-price">Rs 24,500</span>
+                    </div><br>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="./Watch/Alankaar.html"><img src="./Images/Watch/Alankar/alankaar-beige.png.webp"
+                            alt="Alankaar"></a>
+                    <h3>Alankaar</h3><!-- Featured Product3 -->
+                    <div class="price">
+                        <span class="original-price">Rs 10,000</span>
+                        <span class="discounted-price">Rs 7,999</span>
+                    </div><br>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="./Watch/Ballade.html"><img src="./Images/Watch/Ballade/blue.png" alt="Ballade"></a>
+                    <h3>Ballade</h3><!-- Featured Product4 -->
+                    <div class="price">
+                        <span class="original-price">Rs 10,000</span>
+                        <span class="discounted-price">Rs 8,500</span>
+                    </div><br>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Overview of All Pages Section -->
+    <section class="overview-section">
+        <div class="container">
+            <h2>Overview of All Pages</h2>
+            <div class="overview-layout">
+                <div class="overview-item">
+                    <img src="./Images/Watch/Everest Gun Metal/GmBLK.png" alt="Products"
+                        style="width: 100%; height: 180px; border-radius: 10px;">
+                    <h3>Products</h3><!-- Overview of Product Page -->
+                    <p>Explore our exclusive collection of premium timepieces from renowned brands.</p>
+                    <a href="./HTML/products.html">View More</a>
+                </div>
+                <div class="overview-item">
+                    <img src="./Images/blogpage/abouttechnology.webp" alt="Blog"
+                        style="width: 100%; height: 150px; border-radius: 10px;"><br><br>
+                    <h3>Blog</h3><!-- Overview of Blog Page -->
+                    <p>Stay up-to-date with the latest news, trends, and reviews from the world of luxury watches.</p>
+                    <a href="./HTML/blog.html">View More</a>
+                </div>
+                <div class="overview-item">
+                    <img src="./Images/Screen Shot/Screenshot (19).png" alt="Research"
+                        style="width: 100%; height: 130px; border-radius: 10px;"><br><br><br>
+                    <h3>Research</h3><!-- Overview of Research Page -->
+                    <p>Delve into the world of luxury watches and discover the latest research and insights.</p>
+                    <a href="./HTML/research.html">View More</a>
+                </div>
+                <div class="overview-item">
+                    <img src="./Images/ProfileP/ProfileB.png" alt="About"
+                        style="width: 100%; height: 180px; border-radius: 10px;">
+                    <h3>About Us</h3><!-- Overview of About Us Page -->
+                    <p>Learn more about Regal Time and our mission to provide the best luxury watches to our customers.
+                    </p>
+                    <a href="./HTML/aboutus.html">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Showcase Section -->
+    <section class="brand-showcase">
+        <div class="container">
+            <h2>Our Brands</h2>
+            <div class="brand-logos">
+                <div class="brand-item">
+                    <img src="./Images/Logo/samaya-logo.png" alt="Samaya">
+                    <img src="./Images/Logo/gurkha-logo.png" alt="Gurkha">
+                    <img src="./Images/Logo/Tissot_Logo.png" alt="Tissot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><!-- Footer Section -->
+        <div class="footer-content">
+            <div class="footer-logo"> <!-- Footer Logo -->
+                <a href="index.html"><img src="./Images/Logo/logo.png" alt="Footer Logo"></a>
+            </div>
+            <div class="social-media"><!-- Social Media Icons -->
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img src="./Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px;" />
+                    </a>
+                    <a href="https://www.instagram.com/anjalbhattarai79/" target="_blank">
+                        <img src="./Images/Logo/instagram-icon.png" alt="Instagram"
+                            style="width: 55px; height: 35px;" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px;" />
+                    </a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li>Contact: +977-1234567890</li>
+                    <li>Email: info@regaltime.com</li>
+                </ul>
+            </div>
+            <div class="payment-methods">
+                <h4>Supported Payments</h4><!-- Payment Methods -->
+                <ul>
+                    <li><img src="./Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px;"></li>
+                    <li><img src="./Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px;"></li><br>
+                    <li><img src="./Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px;"></li>
+                    <li><img src="./Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px;"></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>Legal</h3><!-- Legal Links -->
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping & Return</a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Regal Time</div>
+    </footer>
+
+    <script>
+        // scripts.js
+        let cartCount = 0;
+
+        // Add event listeners to Add to Cart buttons
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        addToCartButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                cartCount++;
+                document.getElementById("cart-count").textContent = cartCount;
+                alert("Item added to cart!");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

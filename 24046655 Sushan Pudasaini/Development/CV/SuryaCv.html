@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sushan Pudasaini">
+    <meta name="description"
+        content="Regal Time - Luxury Watches, Explore our exclusive collection of premium timepieces.">
+    <meta name="keywords" content="luxury watches, regal time, watches, premium timepieces, fashion, accessories">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#333">
+
+    <!-- Page Title -->
+    <link rel="shortcut icon" href="../Images/Logo/logo(1).png" type="image/x-icon">
+    <title>Surya CV</title>
+
+    <!-- Linking External Resources -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        body {
+            background-color: #EAEAEA;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            line-height: 1.5;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            margin: 50px auto;
+            display: flex;
+            box-shadow: 5px 35px 55px rgba(0, 0, 0, 0.1);
+            padding-top: 60px;
+            /* Add padding to accommodate the back button */
+        }
+
+        .container .left_side {
+            position: relative;
+            background: #AAB99A;
+            padding: 40px;
+        }
+
+        .profileText {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profileText .imgBx {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profileText .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profileText h2 {
+            color: #fff;
+            font-size: 150%;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 140%;
+        }
+
+        .profileText h2 span {
+            font-size: 80%;
+            font-weight: 300;
+        }
+
+        .contactInfo {
+            padding-top: 40px;
+        }
+
+        .title {
+            color: #0c0202;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .contactInfo ul {
+            position: relative;
+        }
+
+        .contactInfo li {
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contactInfo ul li .icon {
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: aqua;
+        }
+
+        .contactInfo ul li span {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .contactInfo.education li {
+            margin-bottom: 15px;
+        }
+
+        .contactInfo.education h5 {
+            color: #03a9f4;
+            font-weight: 500;
+        }
+
+        .contactInfo.education h4:nth-child(2) {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .contactInfo.education h4 {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .contactInfo.education .percent {
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: #081921;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .contactInfo.education .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03a9f4;
+        }
+
+        .container .right_side {
+            position: relative;
+            background: #fff;
+            padding: 40px;
+        }
+
+        .about {
+            margin-bottom: 50px;
+        }
+
+        .about:last-child {
+            margin-bottom: 0;
+        }
+
+        .title2 {
+            color: #225a74;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .about .box {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+
+        .about .box .year_company {
+            min-width: 150px;
+
+        }
+
+        .about .box .year_company h5 {
+            text-transform: uppercase;
+            color: #114058;
+        }
+
+        .about .box .text h4 {
+            text-transform: uppercase;
+            color: #2a7da2;
+            font-size: 16px;
+        }
+
+        .skills .box {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills .box h4 {
+            text-transform: uppercase;
+            color: #23467f;
+            font-weight: 500;
+        }
+
+        .skills .box .percent {
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background: #f0f0f0;
+        }
+
+        .skills .box .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03a9f4;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #AAB99A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #225a74;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-content">
+            <a href="../index.html"><img src="../Images/Logo/logo.png" alt="WebLogo" class="logo"></a>
+            <h1 style="text-align: center;">Regal Time</h1>
+        </div>
+        <nav>
+            <ul class="nav-links"><!-- Navigation Links -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/products.html">Product</a></li>
+                <li><a href="../HTML/blog.html">Blog</a></li>
+                <li><a href="../HTML/research.html">Research</a></li>
+                <li><a href="../HTML/aboutus.html" style="text-decoration: underline;">About Us</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon"><!-- Placeholder for Cart Icon -->
+                <img src="../Images/Logo/cart-icon.png" alt="Cart Icon">
+                <a href="#"></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <a href="../HTML/aboutus.html" class="back-button" style="margin-top: 130px;">
+        Back
+    </a>
+
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="../Images/Profile/Surya.jpg" alt="Surya Kumar Yadav">
+                </div>
+                <h2>Surya Kumar Yadav<br><span> Aspiring Web Developer</span></h2>
+            </div>
+            <div class="contact_Info">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+977 9817786953
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">Yadavsuruj41@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text"></www>adavsuruj.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text"></www>https://www.linkedin.com/in/yadavsuruj-9b309b319/</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Lalitpur , nahiti
+
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>Schooling</h5>
+                        <h4>Mount Everest secondary boarding school
+
+                        </h4>
+
+                    </li>
+                    <li>
+                        <h5>2021-2023</h5>
+                        <h4>Secondary Level Education</h4>
+                        <h4>Bluebird secondary school
+                        </h4>
+                    </li>
+                    <li>
+                        <h5>2024-2027</h5>
+                        <h4>Currently Studying</h4>
+                        <h4>Islington college,kamalpokhari-Kathmandu<br>Kathmandu</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="about language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div width="90%"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Nepali</span>
+                        <span class="percent">
+                            <div width="45%"></div>
+
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Bajjika</span>
+                        <span class="percent">
+                            <div width="85%"></div>
+
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <span class="percent">
+                            <div width="85%"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>A aspiring Web Developer specializing in front end development. Experienced with all stages of the
+                    development cycle for dynamic web projects. learning and honing skills in programming languages like
+                    HTML, CSS, JavaScript, and frameworks.With a strong focus on problem-solving and continuous
+                    learning, aspiring web developers aim to turn creative ideas into seamless digital experiences.</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2021-2022</h5>
+                        <h5>Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Junior Tuitor</h4>
+                        <p>Worked in teaching profession as a tuitor in a medical entrance preparation institution.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2021- 2022</h5>
+                        <h5>Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Volunteer</h4>
+                        <p>Worked with Red Cross Society ,in a rural area for several awarness program.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2022-2023</h5>
+                        <h5>Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Web Developer</h4>
+                        <p>worked as a soft web developer,and was working for a statup which provides services to
+                            various education institution .</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about skills">
+                <h2 class="title2">Professional skills</h2>
+                <div class="box">
+                    <h4>Html</h4>
+                    <div class="percent">
+                        <div style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Javascript</h4>
+                    <div class="percent">
+                        <div style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Photography</h4>
+                    <div class="percent">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Video Animation</h4>
+                    <div class="percent">
+                        <div style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about interest">
+                <h2 class="title2">Hobbies</h2>
+                <ul>
+                    <li<i class="fa fa-book" aria-hidden="true"></i> Content Writing</li><br>
+                        <li<i class="fa fa-map-marker" aria-hidden="true"></i> Gaming</li><br>
+                            <li<i class="fa fa-book" aria-hidden="true"></i> Reading</li><br>
+                                <li<i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li><br>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer><!-- Footer Section -->
+        <div class="footer-content">
+            <div class="footer-logo"> <!-- Footer Logo -->
+                <a href="../index.html"><img src="../Images/Logo/logo.png" alt="Footer Logo"></a>
+            </div>
+            <div class="social-media"><!-- Social Media Icons -->
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img src="../Images/Logo/facebook-icon.png" alt="Facebook" style="width: 55px; height: 40px;" />
+                    </a>
+                    <a href="https://www.instagram.com/anjalbhattarai79/" target="_blank">
+                        <img src="../Images/Logo/instagram-icon.png" alt="Instagram"
+                            style="width: 55px; height: 35px;" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../Images/Logo/youtube-icon.png" alt="Youtube" style="width: 55px; height: 40px;" />
+                    </a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li>Contact: +977-1234567890</li>
+                    <li>Email: info@regaltime.com</li>
+                </ul>
+            </div>
+            <div class="payment-methods">
+                <h4>Supported Payments</h4><!-- Payment Methods -->
+                <ul>
+                    <li><img src="../Images/Logo/esewa.png" alt="esewa" style="width: 40px; height: 35px;"></li>
+                    <li><img src="../Images/Logo/khalti.png" alt="khalti" style="width: 40px; height: 45px;"></li><br>
+                    <li><img src="../Images/Logo/fonepay.png" alt="fonepay" style="width: 50px; height: 25px;"></li>
+                    <li><img src="../Images/Logo/ime-pay.png" alt="ime-pay" style="width: 70px; height: 45px;"></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>Legal</h3><!-- Legal Links -->
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping & Return</a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Regal Time</div>
+    </footer>
+</body>
+
+</html>
